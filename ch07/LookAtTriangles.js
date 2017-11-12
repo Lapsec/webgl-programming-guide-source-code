@@ -57,7 +57,7 @@ function main() {
   // Set the matrix to be used for to set the camera view
   var viewMatrix = new Matrix4();
   viewMatrix.setLookAt(0.20, 0.25, 0.25, 0, 0, 0, 0, 1, 0);
-
+  console.log(viewMatrix.elements);
   // Set the view matrix
   gl.uniformMatrix4fv(u_ViewMatrix, false, viewMatrix.elements);
 
